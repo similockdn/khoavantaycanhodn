@@ -30,33 +30,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="preload"
-as="image"
-href="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop">
-
-<script type="application/ld+json">
-{
-"@context":"https://schema.org",
-"@type":"LocalBusiness",
-"name":"khoá Vân Tay Similock Đà Nẵng",
-"image":"https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop",
-"url":"https://similock.vn",
-"telephone":"0902950816",
-"priceRange":"$$",
-"address":{
-"@type":"PostalAddress",
-"streetAddress":"223 Trường Chinh",
-"addressLocality":"Đà Nẵng",
-"addressCountry":"VN"
-},
-"sameAs":[
-"https://www.youtube.com/",
-"https://www.tiktok.com/",
-"https://zalo.me/0902950816"
-]
-}
-</script>
-
 <style>
 
 /* RESET */
@@ -264,7 +237,6 @@ border-radius:38px;
 padding:30px;
 box-shadow:
 0 15px 45px rgba(0,0,0,.06);
-
 border:1px solid rgba(255,255,255,.9);
 }
 
@@ -338,49 +310,78 @@ color:#616977;
 
 .services{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+gap:28px;
+margin-top:30px;
 }
 
 .service-box{
-background:rgba(255,255,255,.82);
-border-radius:34px;
-padding:40px 34px;
+position:relative;
+background:rgba(255,255,255,.86);
+border-radius:36px;
+padding:34px;
+border:1px solid rgba(255,255,255,.95);
 box-shadow:
-0 12px 35px rgba(0,0,0,.05);
-
+0 15px 45px rgba(0,0,0,.05);
 transition:.35s;
-border:1px solid rgba(255,255,255,.9);
+overflow:hidden;
 }
 
 .service-box:hover{
 transform:translateY(-8px);
+box-shadow:
+0 22px 55px rgba(0,0,0,.08);
 }
 
-.icon{
-width:72px;
-height:72px;
-border-radius:24px;
+.service-top{
+display:flex;
+align-items:center;
+gap:18px;
+margin-bottom:28px;
+}
+
+.icon-box{
+width:78px;
+height:78px;
+min-width:78px;
+border-radius:26px;
 display:flex;
 align-items:center;
 justify-content:center;
-background:rgba(0,113,227,.08);
-font-size:34px;
-margin-bottom:24px;
+background:
+linear-gradient(135deg,
+rgba(0,113,227,.10),
+rgba(0,180,255,.12));
+color:#0071e3;
+}
+
+.icon-box svg{
+width:36px;
+height:36px;
+}
+
+.line{
+flex:1;
+height:1px;
+background:
+linear-gradient(to right,
+rgba(0,113,227,.18),
+transparent);
 }
 
 .service-box h3{
-font-size:28px;
+font-size:30px;
 font-weight:800;
-margin-bottom:14px;
-color:#0071e3;
 letter-spacing:-1px;
+margin-bottom:16px;
+line-height:1.2;
+color:#0071e3;
 }
 
 .service-box p{
 font-size:17px;
 line-height:1.9;
-color:#5b6270;
+color:#5c6472;
 }
 
 /* CONTACT */
@@ -392,7 +393,6 @@ border-radius:42px;
 background:rgba(255,255,255,.82);
 box-shadow:
 0 15px 50px rgba(0,0,0,.06);
-
 text-align:center;
 }
 
@@ -413,6 +413,25 @@ margin-bottom:24px;
 .contact a{
 color:#0071e3;
 font-weight:800;
+}
+
+/* MAP */
+
+.map-box{
+width:100%;
+height:520px;
+border-radius:38px;
+overflow:hidden;
+background:#fff;
+box-shadow:
+0 15px 45px rgba(0,0,0,.06);
+border:1px solid rgba(255,255,255,.9);
+}
+
+.map-box iframe{
+width:100%;
+height:100%;
+display:block;
 }
 
 /* SOCIAL */
@@ -436,7 +455,6 @@ font-weight:700;
 color:#111;
 box-shadow:
 0 10px 30px rgba(0,0,0,.08);
-
 transition:.3s;
 }
 
@@ -458,7 +476,6 @@ font-size:16px;
 font-weight:800;
 box-shadow:
 0 12px 35px rgba(0,113,227,.28);
-
 transition:.3s;
 z-index:999;
 }
@@ -537,6 +554,40 @@ right:15px;
 bottom:15px;
 }
 
+.map-box{
+height:380px;
+border-radius:28px;
+}
+
+.services{
+gap:20px;
+}
+
+.service-box{
+padding:28px;
+border-radius:30px;
+}
+
+.icon-box{
+width:68px;
+height:68px;
+min-width:68px;
+border-radius:22px;
+}
+
+.icon-box svg{
+width:30px;
+height:30px;
+}
+
+.service-box h3{
+font-size:24px;
+}
+
+.service-box p{
+font-size:16px;
+}
+
 }
 
 /* PERFORMANCE */
@@ -557,13 +608,11 @@ scroll-behavior:auto !important;
 
 <body>
 
-<!-- TOP BAR -->
-
 <div class="top-running-bar">
 
 <div class="running-text">
 
-🔥 SIÊU GIẢM GIÁ KHI LẮP KHOÁ Vân Tay CHO CĂN HỘ CHO THUÊ 🔥
+🔥 SIÊU GIẢM GIÁ KHI LẮP KHOÁ VÂN TAY CHO CĂN HỘ CHO THUÊ 🔥
 &nbsp;&nbsp;&nbsp;
 ✅ MIỄN PHÍ LẮP ĐẶT
 &nbsp;&nbsp;&nbsp;
@@ -574,8 +623,6 @@ scroll-behavior:auto !important;
 </div>
 
 </div>
-
-<!-- HERO -->
 
 <section class="hero">
 
@@ -673,8 +720,6 @@ Miễn phí lắp đặt và bảo hành 24 tháng tận nhà
 
 </section>
 
-<!-- SERVICES -->
-
 <section class="section" id="services">
 
 <div class="container">
@@ -696,33 +741,80 @@ cho căn hộ dịch vụ, homestay, Airbnb và chung cư mini.
 
 <div class="service-box">
 
-<div class="icon">🏢</div>
+<div class="service-top">
+
+<div class="icon-box">
+
+<svg viewBox="0 0 24 24" fill="none">
+<path d="M4 20V7L12 3L20 7V20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 20V12H15V20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</div>
+
+<div class="line"></div>
+
+</div>
 
 <h3>Căn Hộ Dịch Vụ</h3>
 
 <p>
-Tăng trải nghiệm khách thuê,
-chuyên nghiệp hơn và hạn chế thất lạc chìa khóa.
+Tăng trải nghiệm khách thuê, chuyên nghiệp hơn
+và hạn chế thất lạc chìa khóa.
 </p>
 
 </div>
 
 <div class="service-box">
 
-<div class="icon">📲</div>
+<div class="service-top">
+
+<div class="icon-box">
+
+<svg viewBox="0 0 24 24" fill="none">
+<path d="M12 18H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+<rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.8"/>
+</svg>
+
+</div>
+
+<div class="line"></div>
+
+</div>
 
 <h3>Quản Lý Từ Xa</h3>
 
 <p>
-Cấp mật khẩu online,
-quản lý nhiều căn hộ và xem lịch sử mở cửa trực tiếp trên điện thoại.
+Cấp mật khẩu online, quản lý nhiều căn hộ
+và xem lịch sử mở cửa trực tiếp trên điện thoại.
 </p>
 
 </div>
 
 <div class="service-box">
 
-<div class="icon">🛡️</div>
+<div class="service-top">
+
+<div class="icon-box">
+
+<svg viewBox="0 0 24 24" fill="none">
+<path d="M12 3L5 6V11C5 16 8.5 20.5 12 21C15.5 20.5 19 16 19 11V6L12 3Z"
+stroke="currentColor"
+stroke-width="1.8"
+stroke-linejoin="round"/>
+
+<path d="M9.5 12L11 13.5L14.5 10"
+stroke="currentColor"
+stroke-width="1.8"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+</svg>
+
+</div>
+
+<div class="line"></div>
+
+</div>
 
 <h3>Bảo Mật Cao</h3>
 
@@ -735,9 +827,29 @@ cảnh báo mở khóa bất thường.
 
 <div class="service-box">
 
-<div class="icon">⚡</div>
+<div class="service-top">
 
-<h3>Lắp đặt chính hãng </h3>
+<div class="icon-box">
+
+<svg viewBox="0 0 24 24" fill="none">
+<path d="M14 7L17 10M10 17L7 14M14 7L10 11M17 10L13 14M10 17L14 13M7 14L11 10"
+stroke="currentColor"
+stroke-width="1.8"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+
+<circle cx="12" cy="12" r="9"
+stroke="currentColor"
+stroke-width="1.8"/>
+</svg>
+
+</div>
+
+<div class="line"></div>
+
+</div>
+
+<h3>Lắp Đặt Chính Hãng</h3>
 
 <p>
 Kỹ thuật hãng lắp tận nơi tại Đà Nẵng,
@@ -755,7 +867,7 @@ Khoá Vân Tay SIMILOCK Đà Nẵng
 </h2>
 
 <p>
-Giải pháp khoá Vân Tay chính hãng dành cho căn hộ cho thuê,
+Giải pháp khoá vân tay chính hãng dành cho căn hộ cho thuê,
 homestay, Airbnb và chung cư mini.
 Miễn phí lắp đặt và bảo hành 24 tháng tận nhà.
 </p>
@@ -794,7 +906,38 @@ class="btn btn-outline">
 
 </section>
 
-<!-- SOCIAL -->
+<section class="section">
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+Google Maps
+</h2>
+
+<p>
+Showroom khoá thông minh Similock Đà Nẵng
+tại 223 Trường Chinh, Đà Nẵng.
+</p>
+
+</div>
+
+<div class="map-box">
+
+<iframe
+src="https://www.google.com/maps?q=Similock+Đà+Nẵng+223+Trường+Chinh&output=embed"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
 
 <div class="social-floating">
 
@@ -836,18 +979,14 @@ class="social-btn">
 
 </div>
 
-<!-- CALL -->
-
 <a class="floating-call" href="tel:0902950816">
 
 📞 Gọi Ngay
 
 </a>
 
-<!-- FOOTER -->
-
 <footer>
-© 2026 khoá Vân Tay Similock Đà Nẵng — Chính hãng SIMILOCK
+© 2026 khoá vân tay Similock Đà Nẵng — Chính hãng SIMILOCK
 </footer>
 
 </body>
