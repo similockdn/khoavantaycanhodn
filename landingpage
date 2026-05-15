@@ -1,0 +1,765 @@
+```html
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Khoá Vân Tay SIMILOCK Đà Nẵng | Khoá Căn Hộ Dịch Vụ</title>
+
+<!-- SEO -->
+<meta name="description" content="Khoá thông minh SIMILOCK Đà Nẵng chuyên lắp đặt khoá vân tay cho căn hộ dịch vụ, homestay, Airbnb và chung cư mini. Miễn phí lắp đặt và bảo hành 24 tháng tận nhà.">
+
+<meta name="keywords" content="khoá vân tay Đà Nẵng, khóa thông minh Similock, khóa căn hộ dịch vụ, khóa homestay, khóa Airbnb, khóa cửa vân tay, khóa thông minh Đà Nẵng">
+
+<meta name="author" content="khoá thông minh Similock Đà Nẵng">
+
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0071e3">
+
+<!-- FACEBOOK -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Khoá Vân Tay SIMILOCK Đà Nẵng">
+<meta property="og:description" content="Giải pháp khoá thông minh cho căn hộ dịch vụ, homestay và Airbnb tại Đà Nẵng.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop">
+<meta property="og:url" content="https://tenmiencuaban.com">
+
+<!-- FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+APPLE STYLE UI
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Be Vietnam Pro',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f5f7;
+color:#111;
+overflow-x:hidden;
+}
+
+/* BACKGROUND */
+
+body::before{
+content:'';
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top left, rgba(0,122,255,.12), transparent 35%),
+radial-gradient(circle at bottom right, rgba(52,199,89,.10), transparent 35%);
+z-index:-2;
+}
+
+body::after{
+content:'';
+position:fixed;
+inset:0;
+backdrop-filter:blur(120px);
+z-index:-1;
+}
+
+a{
+text-decoration:none;
+}
+
+/* TOP BAR */
+
+.top-running-bar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(25px);
+border-bottom:1px solid rgba(0,0,0,.06);
+padding:12px 0;
+overflow:hidden;
+z-index:99999;
+white-space:nowrap;
+}
+
+.running-text{
+display:inline-block;
+padding-left:100%;
+animation:runText 22s linear infinite;
+font-size:14px;
+font-weight:700;
+color:#111;
+}
+
+@keyframes runText{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-100%);
+}
+}
+
+/* HERO */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:130px 40px 70px;
+}
+
+.hero-content{
+max-width:1300px;
+width:100%;
+display:grid;
+grid-template-columns:1.1fr .9fr;
+gap:70px;
+align-items:center;
+}
+
+.left h1{
+font-size:76px;
+line-height:1.02;
+font-weight:800;
+letter-spacing:-3px;
+margin-bottom:28px;
+color:#111;
+}
+
+.left h1 span{
+background:linear-gradient(135deg,#0071e3,#00c7be);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.left p{
+font-size:22px;
+line-height:1.8;
+color:#5f5f67;
+margin-bottom:38px;
+max-width:700px;
+}
+
+/* BUTTONS */
+
+.btn-group{
+display:flex;
+gap:18px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:18px 34px;
+border-radius:999px;
+font-weight:700;
+font-size:16px;
+transition:.3s;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+}
+
+.btn-primary{
+background:#0071e3;
+color:#fff;
+box-shadow:
+0 10px 30px rgba(0,113,227,.22);
+}
+
+.btn-primary:hover{
+transform:translateY(-4px);
+box-shadow:
+0 16px 40px rgba(0,113,227,.32);
+}
+
+.btn-outline{
+background:rgba(255,255,255,.55);
+border:1px solid rgba(255,255,255,.7);
+backdrop-filter:blur(18px);
+color:#111;
+}
+
+/* GLASS CARD */
+
+.card{
+background:rgba(255,255,255,.6);
+border:1px solid rgba(255,255,255,.7);
+backdrop-filter:blur(30px);
+border-radius:36px;
+padding:30px;
+box-shadow:
+0 20px 60px rgba(0,0,0,.08);
+}
+
+.lock-img{
+width:100%;
+border-radius:28px;
+margin-bottom:28px;
+display:block;
+}
+
+.feature{
+display:flex;
+align-items:center;
+gap:15px;
+padding:14px 0;
+font-size:17px;
+font-weight:600;
+color:#222;
+border-bottom:1px solid rgba(0,0,0,.05);
+}
+
+.feature:last-child{
+border-bottom:none;
+}
+
+.feature i{
+min-width:42px;
+height:42px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:14px;
+background:linear-gradient(135deg,#0071e3,#00c7be);
+color:#fff;
+font-style:normal;
+font-weight:800;
+}
+
+/* SECTION */
+
+.section{
+padding:120px 35px;
+}
+
+.container{
+max-width:1280px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+margin-bottom:70px;
+}
+
+.title h2{
+font-size:58px;
+font-weight:800;
+letter-spacing:-2px;
+margin-bottom:18px;
+color:#111;
+}
+
+.title p{
+max-width:850px;
+margin:auto;
+font-size:20px;
+line-height:1.9;
+color:#6a6a72;
+}
+
+/* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+gap:28px;
+}
+
+.service-box{
+background:rgba(255,255,255,.62);
+border:1px solid rgba(255,255,255,.8);
+backdrop-filter:blur(25px);
+border-radius:32px;
+padding:38px;
+transition:.35s;
+box-shadow:
+0 10px 35px rgba(0,0,0,.05);
+}
+
+.service-box:hover{
+transform:translateY(-8px);
+box-shadow:
+0 18px 45px rgba(0,0,0,.10);
+}
+
+.icon{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.service-box h3{
+font-size:28px;
+margin-bottom:15px;
+color:#111;
+}
+
+.service-box p{
+font-size:17px;
+line-height:1.9;
+color:#666;
+}
+
+/* CONTACT */
+
+.contact{
+margin-top:80px;
+padding:80px 50px;
+border-radius:40px;
+background:
+linear-gradient(135deg,
+rgba(255,255,255,.8),
+rgba(255,255,255,.55));
+
+backdrop-filter:blur(35px);
+border:1px solid rgba(255,255,255,.9);
+
+box-shadow:
+0 20px 60px rgba(0,0,0,.08);
+
+text-align:center;
+}
+
+.contact h2{
+font-size:56px;
+margin-bottom:24px;
+letter-spacing:-2px;
+color:#111;
+}
+
+.contact p{
+font-size:20px;
+line-height:2;
+color:#555;
+margin-bottom:24px;
+}
+
+.contact a{
+color:#0071e3;
+font-weight:800;
+}
+
+/* FLOATING BUTTON */
+
+.floating-call{
+position:fixed;
+right:24px;
+bottom:24px;
+background:#0071e3;
+color:#fff;
+padding:18px 28px;
+border-radius:999px;
+font-weight:800;
+font-size:16px;
+z-index:999;
+box-shadow:
+0 12px 35px rgba(0,113,227,.30);
+
+transition:.3s;
+}
+
+.floating-call:hover{
+transform:translateY(-5px);
+}
+
+/* POPUP */
+
+.sale-popup{
+position:fixed;
+right:25px;
+bottom:100px;
+width:360px;
+background:rgba(255,255,255,.78);
+backdrop-filter:blur(35px);
+border:1px solid rgba(255,255,255,.9);
+border-radius:34px;
+padding:34px;
+z-index:9999;
+box-shadow:
+0 20px 60px rgba(0,0,0,.12);
+
+animation:popupShow .45s ease;
+overflow:hidden;
+display:none;
+}
+
+@keyframes popupShow{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.popup-badge{
+display:inline-block;
+padding:10px 18px;
+border-radius:999px;
+background:#0071e3;
+color:#fff;
+font-size:13px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.sale-popup h2{
+font-size:38px;
+line-height:1.1;
+letter-spacing:-1px;
+margin-bottom:18px;
+color:#111;
+}
+
+.sale-popup p{
+font-size:17px;
+line-height:1.8;
+color:#666;
+margin-bottom:20px;
+}
+
+.popup-list{
+background:rgba(255,255,255,.65);
+padding:18px;
+border-radius:22px;
+line-height:2;
+font-weight:600;
+margin-bottom:24px;
+color:#222;
+}
+
+.popup-btn{
+display:block;
+text-align:center;
+padding:16px;
+border-radius:999px;
+background:#0071e3;
+color:#fff;
+font-weight:800;
+font-size:16px;
+transition:.3s;
+}
+
+.popup-btn:hover{
+transform:translateY(-4px);
+}
+
+.close-popup{
+position:absolute;
+top:18px;
+right:18px;
+width:38px;
+height:38px;
+border:none;
+border-radius:50%;
+background:#f1f1f1;
+cursor:pointer;
+font-size:15px;
+font-weight:700;
+}
+
+/* FOOTER */
+
+footer{
+padding:40px;
+text-align:center;
+font-size:15px;
+color:#777;
+}
+
+/* MOBILE */
+
+@media(max-width:950px){
+
+.hero-content{
+grid-template-columns:1fr;
+}
+
+.left h1{
+font-size:48px;
+letter-spacing:-2px;
+}
+
+.left p{
+font-size:18px;
+}
+
+.title h2{
+font-size:38px;
+}
+
+.contact h2{
+font-size:36px;
+}
+
+.sale-popup{
+width:calc(100% - 30px);
+left:15px;
+right:15px;
+bottom:90px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-running-bar">
+<div class="running-text">
+🔥 SIÊU GIẢM KHI LẮP KHOÁ THÔNG MINH CHO CĂN HỘ CHO THUÊ 🔥
+&nbsp;&nbsp;&nbsp;
+✅ MIỄN PHÍ LẮP ĐẶT
+&nbsp;&nbsp;&nbsp;
+✅ BẢO HÀNH 24 THÁNG TẬN NHÀ
+&nbsp;&nbsp;&nbsp;
+✅ HỖ TRỢ KỸ THUẬT CHÍNH HÃNG
+&nbsp;&nbsp;&nbsp;
+🔥 SIÊU GIẢM KHI LẮP KHOÁ THÔNG MINH CHO CĂN HỘ CHO THUÊ 🔥
+</div>
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="left">
+
+<h1>
+Khoá Vân Tay<br>
+<span>SIMILOCK</span><br>
+Cho Căn Hộ Dịch Vụ
+</h1>
+
+<p>
+Giải pháp khóa thông minh cao cấp cho căn hộ cho thuê,
+homestay và Airbnb tại Đà Nẵng. Quản lý từ xa,
+khách tự check-in và tăng tính chuyên nghiệp cho căn hộ.
+</p>
+
+<div class="btn-group">
+
+<a href="tel:0965594568" class="btn btn-primary">
+📞 096.559.4568
+</a>
+
+<a href="#services" class="btn btn-outline">
+✨ Xem giải pháp
+</a>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img class="lock-img"
+src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1200&auto=format&fit=crop"
+alt="Khoá SIMILOCK">
+
+<div class="feature">
+<i>✓</i>
+Khách tự check-in không cần chìa khóa
+</div>
+
+<div class="feature">
+<i>✓</i>
+Mở bằng vân tay, app, mật khẩu và thẻ từ
+</div>
+
+<div class="feature">
+<i>✓</i>
+Quản lý nhiều căn hộ trên điện thoại
+</div>
+
+<div class="feature">
+<i>✓</i>
+Phù hợp tài chính và khí hậu miền Trung
+</div>
+
+<div class="feature">
+<i>✓</i>
+Miễn phí lắp đặt và bảo hành 24 tháng tận nhà
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="section" id="services">
+
+<div class="container">
+
+<div class="title">
+
+<h2>
+Giải Pháp Khoá Thông Minh
+</h2>
+
+<p>
+khoá thông minh Similock Đà Nẵng chuyên lắp đặt khoá vân tay
+cho căn hộ dịch vụ, homestay, Airbnb và chung cư mini.
+</p>
+
+</div>
+
+<div class="services">
+
+<div class="service-box">
+<div class="icon">🏢</div>
+<h3>Căn Hộ Dịch Vụ</h3>
+<p>
+Tăng trải nghiệm khách thuê,
+hạn chế thất lạc chìa khóa và chuyên nghiệp hơn.
+</p>
+</div>
+
+<div class="service-box">
+<div class="icon">📱</div>
+<h3>Quản Lý Từ Xa</h3>
+<p>
+Cấp mật khẩu từ xa,
+kiểm tra lịch sử mở cửa và quản lý nhiều căn hộ.
+</p>
+</div>
+
+<div class="service-box">
+<div class="icon">🛡️</div>
+<h3>Bảo Mật Cao</h3>
+<p>
+Công nghệ vân tay hiện đại chống sao chép
+và cảnh báo mở khóa bất thường.
+</p>
+</div>
+
+<div class="service-box">
+<div class="icon">⚡</div>
+<h3>Lắp Đặt Chính Hãng</h3>
+<p>
+Kỹ thuật hãng lắp tận nơi tại Đà Nẵng,
+bảo hành chính hãng nhanh chóng.
+</p>
+</div>
+
+</div>
+
+<div class="contact">
+
+<h2>
+Khoá Thông Minh SIMILOCK Đà Nẵng
+</h2>
+
+<p>
+📞 Hotline:
+<a href="tel:0965594568">096.559.4568</a>
+</p>
+
+<p>
+📍 Đà Nẵng: 223 Trường Chinh, Đà Nẵng
+<br><br>
+📍 TP.HCM: 403 Nguyễn Thái Bình, P. Bảy Hiền, TP.HCM
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- POPUP -->
+
+<div class="sale-popup" id="salePopup">
+
+<button class="close-popup" onclick="closePopup()">
+✕
+</button>
+
+<div class="popup-badge">
+🔥 ƯU ĐÃI THÁNG NÀY
+</div>
+
+<h2>
+SIÊU GIẢM<br>
+CHO CĂN HỘ
+</h2>
+
+<p>
+Lắp nhiều căn hộ nhận giá cực tốt 🎁
+Miễn phí lắp đặt và bảo hành 24 tháng tận nhà.
+</p>
+
+<div class="popup-list">
+✅ Hỗ trợ khách tự check-in<br>
+✅ Quản lý từ xa bằng điện thoại<br>
+✅ Phù hợp homestay & Airbnb<br>
+✅ Kỹ thuật hãng lắp tận nơi
+</div>
+
+<a href="tel:0965594568" class="popup-btn">
+📞 GỌI NGAY 096.559.4568
+</a>
+
+</div>
+
+<!-- FLOATING CALL -->
+
+<a class="floating-call" href="tel:0965594568">
+📞 Gọi Ngay
+</a>
+
+<!-- FOOTER -->
+
+<footer>
+© 2026 khoá thông minh Similock Đà Nẵng — Chính hãng SIMILOCK
+</footer>
+
+<!-- JS -->
+
+<script>
+
+/* POPUP HIỆN SAU 5 GIÂY */
+
+const popup = document.getElementById('salePopup');
+
+setTimeout(() => {
+
+popup.style.display = 'block';
+
+}, 5000);
+
+/* TẮT POPUP */
+
+function closePopup(){
+
+popup.style.display = 'none';
+
+}
+
+</script>
+
+</body>
+</html>
+```
