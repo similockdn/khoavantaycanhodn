@@ -351,7 +351,7 @@ color:#0071e3;
 font-weight:800;
 }
 
-/* FLOATING BUTTON */
+/* FLOATING CALL */
 
 .floating-call{
 position:fixed;
@@ -374,102 +374,35 @@ transition:.3s;
 transform:translateY(-5px);
 }
 
-/* POPUP */
+/* SOCIAL FLOAT */
 
-.sale-popup{
+.social-floating{
 position:fixed;
-right:25px;
-bottom:100px;
-width:360px;
-background:rgba(255,255,255,.78);
-backdrop-filter:blur(35px);
-border:1px solid rgba(255,255,255,.9);
-border-radius:34px;
-padding:34px;
+left:24px;
+bottom:24px;
+display:flex;
+flex-direction:column;
+gap:14px;
 z-index:9999;
-box-shadow:
-0 20px 60px rgba(0,0,0,.12);
-
-animation:popupShow .45s ease;
-overflow:hidden;
-display:none;
 }
 
-@keyframes popupShow{
-from{
-opacity:0;
-transform:translateY(40px);
-}
-to{
-opacity:1;
-transform:translateY(0);
-}
-}
-
-.popup-badge{
-display:inline-block;
-padding:10px 18px;
+.social-btn{
+background:rgba(255,255,255,.75);
+backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,.8);
+padding:14px 22px;
 border-radius:999px;
-background:#0071e3;
-color:#fff;
-font-size:13px;
-font-weight:800;
-margin-bottom:20px;
-}
-
-.sale-popup h2{
-font-size:38px;
-line-height:1.1;
-letter-spacing:-1px;
-margin-bottom:18px;
+font-weight:700;
+font-size:15px;
 color:#111;
-}
-
-.sale-popup p{
-font-size:17px;
-line-height:1.8;
-color:#666;
-margin-bottom:20px;
-}
-
-.popup-list{
-background:rgba(255,255,255,.65);
-padding:18px;
-border-radius:22px;
-line-height:2;
-font-weight:600;
-margin-bottom:24px;
-color:#222;
-}
-
-.popup-btn{
-display:block;
-text-align:center;
-padding:16px;
-border-radius:999px;
-background:#0071e3;
-color:#fff;
-font-weight:800;
-font-size:16px;
+box-shadow:
+0 10px 30px rgba(0,0,0,.08);
 transition:.3s;
 }
 
-.popup-btn:hover{
+.social-btn:hover{
 transform:translateY(-4px);
-}
-
-.close-popup{
-position:absolute;
-top:18px;
-right:18px;
-width:38px;
-height:38px;
-border:none;
-border-radius:50%;
-background:#f1f1f1;
-cursor:pointer;
-font-size:15px;
-font-weight:700;
+background:#fff;
 }
 
 /* FOOTER */
@@ -506,11 +439,14 @@ font-size:38px;
 font-size:36px;
 }
 
-.sale-popup{
-width:calc(100% - 30px);
+.social-floating{
 left:15px;
+bottom:15px;
+}
+
+.floating-call{
 right:15px;
-bottom:90px;
+bottom:15px;
 }
 
 }
@@ -558,8 +494,8 @@ khách tự check-in và tăng tính chuyên nghiệp cho căn hộ.
 
 <div class="btn-group">
 
-<a href="tel:0965594568" class="btn btn-primary">
-📞 096.559.4568
+<a href="tel:0902950816" class="btn btn-primary">
+📞 0902.950.816
 </a>
 
 <a href="#services" class="btn btn-outline">
@@ -674,7 +610,7 @@ Khoá Thông Minh SIMILOCK Đà Nẵng
 
 <p>
 📞 Hotline:
-<a href="tel:0965594568">096.559.4568</a>
+<a href="tel:0902950816">0902.950.816</a>
 </p>
 
 <p>
@@ -689,44 +625,31 @@ Khoá Thông Minh SIMILOCK Đà Nẵng
 
 </section>
 
-<!-- POPUP -->
+<!-- SOCIAL FLOATING -->
 
-<div class="sale-popup" id="salePopup">
+<div class="social-floating">
 
-<button class="close-popup" onclick="closePopup()">
-✕
-</button>
+<a href="https://zalo.me/0902950816" target="_blank" class="social-btn">
+💬 Zalo
+</a>
 
-<div class="popup-badge">
-🔥 ƯU ĐÃI THÁNG NÀY
-</div>
+<a href="https://www.youtube.com/" target="_blank" class="social-btn">
+▶️ YouTube
+</a>
 
-<h2>
-SIÊU GIẢM<br>
-CHO CĂN HỘ
-</h2>
+<a href="https://www.tiktok.com/" target="_blank" class="social-btn">
+🎵 TikTok
+</a>
 
-<p>
-Lắp nhiều căn hộ nhận giá cực tốt 🎁
-Miễn phí lắp đặt và bảo hành 24 tháng tận nhà.
-</p>
-
-<div class="popup-list">
-✅ Hỗ trợ khách tự check-in<br>
-✅ Quản lý từ xa bằng điện thoại<br>
-✅ Phù hợp homestay & Airbnb<br>
-✅ Kỹ thuật hãng lắp tận nơi
-</div>
-
-<a href="tel:0965594568" class="popup-btn">
-📞 GỌI NGAY 096.559.4568
+<a href="https://maps.google.com/?q=223+Trường+Chinh+Đà+Nẵng" target="_blank" class="social-btn">
+📍 Maps
 </a>
 
 </div>
 
 <!-- FLOATING CALL -->
 
-<a class="floating-call" href="tel:0965594568">
+<a class="floating-call" href="tel:0902950816">
 📞 Gọi Ngay
 </a>
 
@@ -735,30 +658,6 @@ Miễn phí lắp đặt và bảo hành 24 tháng tận nhà.
 <footer>
 © 2026 khoá thông minh Similock Đà Nẵng — Chính hãng SIMILOCK
 </footer>
-
-<!-- JS -->
-
-<script>
-
-/* POPUP HIỆN SAU 5 GIÂY */
-
-const popup = document.getElementById('salePopup');
-
-setTimeout(() => {
-
-popup.style.display = 'block';
-
-}, 5000);
-
-/* TẮT POPUP */
-
-function closePopup(){
-
-popup.style.display = 'none';
-
-}
-
-</script>
 
 </body>
 </html>
