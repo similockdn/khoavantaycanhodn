@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://khoavantaycanho.com/sitemap.xml

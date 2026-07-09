@@ -1,0 +1,11 @@
+{
+  "products": [
+    {"model":"F07","name":"Khóa vân tay F07 cho căn hộ","price":"1.850.000đ","category":"Căn hộ / composite / cửa chống cháy","slug":"khoa-can-ho.html","features":["Vân tay","Mã số","Thẻ từ","Chìa cơ","TTLock"]},
+    {"model":"S01","name":"Khóa vân tay S01 cửa nhôm Xingfa","price":"Liên hệ","category":"Cửa nhôm Xingfa","slug":"khoa-cua-nhom-xingfa.html","features":["Chống nước","TTLock","Lắp giữ form","Mật khẩu từ xa"]},
+    {"model":"569 WiFi","name":"Khóa cổng sắt thông minh 569 WiFi","price":"Liên hệ","category":"Cổng sắt ngoài trời","slug":"khoa-569-wifi-cong-sat.html","features":["Inox 304","Tuya","WiFi","2 mặt chìa"]}
+  ],
+  "faqs": [
+    {"question":"Khóa F07 giá 1.850.000đ đã gồm gì?","answer":"Giá đã gồm VAT, miễn phí lắp đặt cơ bản tại Đà Nẵng và bảo hành 24 tháng tận nhà."},
+    {"question":"Có cấp mật khẩu từ xa cho khách thuê không?","answer":"Có, chủ căn hộ có thể cấp mã theo thời gian để khách tự check-in."}
+  ]
+}
