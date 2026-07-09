@@ -1,34 +1,27 @@
-# SIMILOCK Enterprise SEO + Firebase CMS
+# SIMILOCK V3 Enterprise Design + Firebase CMS
 
-## Bộ này gồm gì?
-- Website nhiều trang SEO: Trang chủ, khóa căn hộ, khóa cửa nhôm Xingfa, khóa cổng sắt, khóa FaceID, dự án bàn giao, blog, liên hệ.
-- Firebase Firestore lưu lead, sản phẩm, dự án, FAQ.
-- Admin CMS: `admin.html`.
-- SEO kỹ thuật: title/meta/canonical, LocalBusiness schema, sitemap.xml, robots.txt, mobile CTA, internal link.
-- Form lead lưu vào Firestore hoặc localStorage khi demoMode=true.
+## Đã có
+- Giao diện Ultra/Enterprise gọn, sang, mobile-first.
+- Firebase config của project similock-enterprise-seo.
+- Form lead lưu Firestore collection `leads`.
+- Admin login bằng Firebase Authentication, email admin: `jackphamvn@gmail.com`.
+- Firestore rules bảo mật: khách chỉ tạo lead, admin mới đọc/sửa dữ liệu.
+- Trang SEO: trang chủ, khóa căn hộ, cửa nhôm Xingfa, cổng sắt, FaceID, dự án, blog, liên hệ.
+- Khu vực gắn YouTube, TikTok, Google Maps.
+- Chỗ dán GA4, Facebook Pixel, TikTok Pixel trong `<head>`.
 
-## Cấu hình Firebase
-1. Tạo Firebase Project.
-2. Tạo Web App và copy config.
-3. Mở `assets/js/firebase-config.js`.
-4. Dán config thật.
-5. Đổi `demoMode = false`.
-6. Thêm email admin vào `adminEmails` và Firestore Rules.
-7. Bật Authentication > Email/Password.
-8. Tạo user admin.
-9. Firestore Database > Rules > dán `firestore.rules` > Publish.
+## Việc cần làm trên Firebase
+1. Bật Firestore Database ở Production mode.
+2. Bật Authentication > Email/Password.
+3. Tạo user `jackphamvn@gmail.com`.
+4. Copy `firestore.rules` vào Firestore Rules và Publish.
+5. Deploy bằng Firebase Hosting.
 
-## Deploy Firebase Hosting
-```bash
-npm install -g firebase-tools
-firebase login
-firebase init hosting firestore
-firebase deploy
-```
+## Gắn YouTube
+Trong `index.html`, tìm iframe YouTube và thay bằng video/playlist thật nếu cần.
 
-## Việc cần làm để SEO mạnh hơn sau khi upload
-- Thay ảnh minh họa bằng ảnh thật SIMILOCK và ảnh bàn giao thật.
-- Gửi sitemap trong Google Search Console.
-- Gắn GA4, Facebook Pixel, TikTok Pixel, Zalo OA nếu chạy quảng cáo.
-- Cập nhật dự án bàn giao hằng tuần trong Admin.
-- Viết thêm 2-3 bài blog/tháng theo keyword trong SEO_KEYWORD_PLAN.md.
+## Gắn TikTok
+Vào TikTok > Share > Embed > copy mã embed và dán vào khu vực TikTok trong `index.html`.
+
+## Gắn Google Analytics / Pixel
+Dán mã GA4, Facebook Pixel, TikTok Pixel tại phần comment trong `<head>` của các file HTML.
