@@ -1,16 +1,27 @@
-# SIMILOCK Premium Rebuild
+# SIMILOCK Final Premium Design
 
-Bản thiết kế lại toàn bộ giao diện theo hướng cao cấp, sạch, dễ đọc, CTA rõ.
+Bản thiết kế lại theo hướng gọn, sang, tập trung chuyển đổi và tránh các thành phần nhúng dễ gây lỗi trên trang chủ.
 
-## Cấu hình
-- Firebase config đã nằm ở `assets/firebase-config.js` nếu copy từ bản V3.
-- Dùng `firestore.rules` để publish Rules.
-- Thay YouTube/TikTok embed bằng video thật trong `index.html`.
+## Cách dùng
+1. Upload toàn bộ file lên hosting hoặc Firebase Hosting.
+2. Firebase config đã có trong `assets/firebase-config.js`.
+3. Firestore rules nằm trong `firestore.rules`.
+4. Trang chủ dùng nút dẫn tới YouTube/TikTok/Google Maps thay vì nhúng video lỗi.
+5. Bản đồ chỉ nhúng tại `lien-he.html` để tránh làm trang chủ nặng và rối.
 
 ## File chính
-- `index.html` trang chủ
-- `khoa-can-ho.html` SEO F07/căn hộ
-- `khoa-cua-nhom-xingfa.html` SEO S01/S168
-- `khoa-569-wifi-cong-sat.html` SEO 569 WiFi
-- `khoa-faceid.html` SEO FaceID
-- `admin.html` CMS Firebase
+- `index.html`: Trang chủ thiết kế lại.
+- `khoa-can-ho.html`: SEO F07/căn hộ.
+- `khoa-cua-nhom-xingfa.html`: SEO cửa nhôm.
+- `khoa-569-wifi-cong-sat.html`: SEO cổng sắt.
+- `khoa-faceid.html`: SEO FaceID.
+- `du-an-ban-giao.html`: Công trình bàn giao.
+- `blog.html`: Blog SEO.
+- `lien-he.html`: Liên hệ + Google Maps.
+- `admin.html`: Admin CMS.
+
+## Kiểm tra đã thực hiện
+- Trang chủ không dùng iframe video để tránh lỗi hiển thị.
+- YouTube/TikTok/Google Maps chuyển sang nút hành động và trang liên hệ.
+- Liên kết nội bộ cơ bản đã có.
+- Form lead dùng Firebase Firestore.
