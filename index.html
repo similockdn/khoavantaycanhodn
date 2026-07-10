@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0877e8">
+  <link rel="manifest" href="/manifest.json">
   <!-- Preconnect to fonts and analytics (if any) -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +27,7 @@
   </style>
 
   <!-- Preload hero image (replace path if you add optimized image files) -->
-  <link rel="preload" as="image" href="/images/hero-1200.svg">
+  <link rel="preload" as="image" href="https://similockdn.github.io/khoavantaycanhodn/images/hero-1200.svg">
 
   <!-- Load main stylesheet non-blocking -->
   <link rel="preload" href="/css/styles.css" as="style" onload="this.rel='stylesheet'">
@@ -39,16 +40,25 @@
   <title>Khoá Vân Tay Căn Hộ Đà Nẵng — Lắp đặt & Bảo trì</title>
   <meta name="description" content="Lắp đặt khóa vân tay cho căn hộ tại Đà Nẵng. Dịch vụ chuyên nghiệp, bảo hành và hỗ trợ kỹ thuật.">
 
-  <!-- Open Graph -->
+  <!-- Open Graph (use absolute URL for reliable social preview) -->
   <meta property="og:title" content="Khoá Vân Tay Căn Hộ Đà Nẵng">
   <meta property="og:description" content="Lắp đặt khóa vân tay cho căn hộ tại Đà Nẵng. Dịch vụ chuyên nghiệp, bảo hành và hỗ trợ kỹ thuật.">
-  <meta property="og:image" content="/images/og-image.svg">
+  <meta property="og:image" content="https://similockdn.github.io/khoavantaycanhodn/images/og-image.svg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="vi_VN">
+  <meta name="twitter:card" content="summary_large_image">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Khoá Vân Tay Căn Hộ Đà Nẵng","description":"Lắp đặt và bảo trì khóa vân tay cho căn hộ tại Đà Nẵng.","image":"https://similockdn.github.io/khoavantaycanhodn/images/og-image.jpg","address":{"@type":"PostalAddress","addressLocality":"Đà Nẵng","addressCountry":"VN"},"telephone":"+84-..."}
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"Khoá Vân Tay Căn Hộ Đà Nẵng",
+    "description":"Lắp đặt và bảo trì khóa vân tay cho căn hộ tại Đà Nẵng.",
+    "image":"https://similockdn.github.io/khoavantaycanhodn/images/og-image.svg",
+    "address":{"@type":"PostalAddress","addressLocality":"Đà Nẵng","addressCountry":"VN"},
+    "telephone":"+84-..."
+  }
   </script>
 
 </head>
@@ -71,11 +81,12 @@
   <main id="main">
     <section class="hero">
       <div class="container">
-        <!-- Responsive hero image: add converted AVIF/WebP files in /images for best results -->
+        <!-- Responsive hero image: supports AVIF/WebP if you add conversions to /images -->
         <picture>
-          <source type="image/avif" srcset="/images/hero-800.avif 800w, /images/hero-1200.avif 1200w" sizes="(max-width:800px) 100vw, 1200px">
-          <source type="image/webp" srcset="/images/hero-800.webp 800w, /images/hero-1200.webp 1200w" sizes="(max-width:800px) 100vw, 1200px">
-          <img src="/images/hero-1200.svg" alt="Khóa vân tay cho căn hộ" decoding="async" loading="eager">
+          <source type="image/avif" srcset="https://similockdn.github.io/khoavantaycanhodn/images/hero-800.avif 800w, https://similockdn.github.io/khoavantaycanhodn/images/hero-1200.avif 1200w" sizes="(max-width:800px) 100vw, 1200px">
+          <source type="image/webp" srcset="https://similockdn.github.io/khoavantaycanhodn/images/hero-800.webp 800w, https://similockdn.github.io/khoavantaycanhodn/images/hero-1200.webp 1200w" sizes="(max-width:800px) 100vw, 1200px">
+          <!-- fallback to SVG if no AVIF/WebP available -->
+          <img src="https://similockdn.github.io/khoavantaycanhodn/images/hero-1200.svg" alt="Khóa vân tay cho căn hộ" decoding="async" loading="eager">
         </picture>
         <div style="padding-top:16px">
           <h2 style="margin:0 0 8px 0">Lắp đặt khóa vân tay chuyên nghiệp</h2>
@@ -109,7 +120,7 @@
 
   <!-- Minimal script: defer non-critical JS -->
   <script>
-    // register service worker optionally (uncomment if you add sw.js)
+    // register service worker optionally (uncomment if you want SW enabled)
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('/sw.js').then(function(reg) {
@@ -122,6 +133,6 @@
   <!-- Non-blocking main script -->
   <script src="/js/main.js" defer></script>
 
-  <!-- Notes for maintainers: convert images in /images to AVIF/WebP, enable SW by creating /sw.js and uncommenting above, update og-image path to a real URL -->
+  <!-- Notes for maintainers: convert SVG to AVIF/WebP and add to /images for best results; update og-image path if you use a custom domain -->
 </body>
 </html>
