@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#fff"/>
+  <circle cx="600" cy="300" r="220" fill="#0877e8" opacity="0.08"/>
+  <text x="50" y="120" font-family="Inter, Arial, sans-serif" font-size="48" fill="#022">Khóa vân tay cho căn hộ</text>
+  <text x="50" y="180" font-family="Inter, Arial, sans-serif" font-size="22" fill="#034">An toàn • Tiện lợi • Bảo hành dài hạn</text>
+</svg>

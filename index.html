@@ -26,7 +26,7 @@
   </style>
 
   <!-- Preload hero image (replace path if you add optimized image files) -->
-  <link rel="preload" as="image" href="/images/hero-1200.webp">
+  <link rel="preload" as="image" href="/images/hero-1200.svg">
 
   <!-- Load main stylesheet non-blocking -->
   <link rel="preload" href="/css/styles.css" as="style" onload="this.rel='stylesheet'">
@@ -42,7 +42,7 @@
   <!-- Open Graph -->
   <meta property="og:title" content="Khoá Vân Tay Căn Hộ Đà Nẵng">
   <meta property="og:description" content="Lắp đặt khóa vân tay cho căn hộ tại Đà Nẵng. Dịch vụ chuyên nghiệp, bảo hành và hỗ trợ kỹ thuật.">
-  <meta property="og:image" content="/images/og-image.jpg">
+  <meta property="og:image" content="/images/og-image.svg">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="vi_VN">
 
@@ -75,7 +75,7 @@
         <picture>
           <source type="image/avif" srcset="/images/hero-800.avif 800w, /images/hero-1200.avif 1200w" sizes="(max-width:800px) 100vw, 1200px">
           <source type="image/webp" srcset="/images/hero-800.webp 800w, /images/hero-1200.webp 1200w" sizes="(max-width:800px) 100vw, 1200px">
-          <img src="/images/hero-1200.jpg" alt="Khóa vân tay cho căn hộ" decoding="async" loading="eager">
+          <img src="/images/hero-1200.svg" alt="Khóa vân tay cho căn hộ" decoding="async" loading="eager">
         </picture>
         <div style="padding-top:16px">
           <h2 style="margin:0 0 8px 0">Lắp đặt khóa vân tay chuyên nghiệp</h2>
@@ -110,7 +110,6 @@
   <!-- Minimal script: defer non-critical JS -->
   <script>
     // register service worker optionally (uncomment if you add sw.js)
-    /*
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
         navigator.serviceWorker.register('/sw.js').then(function(reg) {
@@ -118,7 +117,6 @@
         }).catch(function(err) { console.error('SW failed', err); });
       });
     }
-    */
   </script>
 
   <!-- Non-blocking main script -->

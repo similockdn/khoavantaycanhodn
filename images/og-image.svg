@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#0b69ff"/>
+      <stop offset="1" stop-color="#5ad1ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#f7fbff"/>
+  <rect x="60" y="60" width="1080" height="510" rx="20" fill="url(#g)" opacity="0.12"/>
+  <text x="100" y="200" font-family="Inter, Arial, sans-serif" font-size="48" fill="#022" font-weight="700">Khoá Vân Tay Căn Hộ Đà Nẵng</text>
+  <text x="100" y="270" font-family="Inter, Arial, sans-serif" font-size="28" fill="#044">Lắp đặt và bảo trì - Tư vấn miễn phí</text>
+</svg>
